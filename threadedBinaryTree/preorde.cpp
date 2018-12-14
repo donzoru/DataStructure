@@ -75,7 +75,8 @@ void creatInThread(int p)
     }
 }
 
-void preorderWith(){
+void preorderWith()
+{
     cout<<"Threaded Preorder Traversal :   ";
     int p = 1;
     while(p){
@@ -89,7 +90,9 @@ void preorderWith(){
     }
     cout<<endl;
 }
-int main(){
+
+int main()
+{
     init();
     preorderWithout();
     creatInThread(1);
