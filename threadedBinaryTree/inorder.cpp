@@ -49,13 +49,16 @@ void inorderWithout()
 
 void inThread(int p,int &pre)
 {
-    if(p){
+    if(p)
+    {
         inThread(l[p],pre);
-        if(l[p]==0){
+        if(l[p]==0)
+        {
             l[p] = pre;
             lt[p] = 1;
         }
-        if(pre && r[pre]==0){
+        if(pre && r[pre]==0)
+        {
             r[pre] = p;
             rt[pre] = 1;
         }
@@ -63,6 +66,7 @@ void inThread(int p,int &pre)
         inThread(r[p],pre);
     }
 }
+
 void creatInThread(int p)
 {
     int pre = 0;
