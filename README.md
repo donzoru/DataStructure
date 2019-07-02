@@ -1,2 +1,2 @@
 # DataStructure
-Some interesting data structure codes implemented by myself
+Some interesting data structure implement by C++
